@@ -1,0 +1,51 @@
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 120px;
+  width: 100%;
+  margin: auto;
+}
+
+.WrapperContainer {
+  max-width: 60vw;
+  width: 100%;
+  position: relative;
+}
+
+.UpperCard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.LowerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardItemThree {
+  margin-right: 5rem;
+}
+
+.CardItemOne {
+  gap: 20px;
+  display: flex;
+}
+
+.CardItemLowerOne {
+  display: flex;
+  gap: 10rem;
+}
+
+.CardItemLowerTwo {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .Wrapper {
+    max-width: 800px;
+  }
+}

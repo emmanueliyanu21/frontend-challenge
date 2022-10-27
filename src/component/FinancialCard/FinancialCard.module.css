@@ -8,8 +8,23 @@
   border-radius: 5px;
 }
 
-.opaqueBlue {
+.opaqueBlue .FinancialCard {
     background: #3C7F90;
+}
+
+.opaqueBlue .Wrapper {
+    justify-content: end;
+    padding-top: 8px;
+}
+
+.opaqueBlue .ArrowUp {
+    margin-right: -10px;
+    border-bottom: 10px solid #3C7F90;
+}
+
+.opaqueBlue .LineWrapper {
+    justify-content: end;
+    margin-right: 30px;
 }
 
 .FinancialCard p {
@@ -35,6 +50,7 @@
   justify-content: center;
   align-items: center;
   height: 60px;
+  position: relative;
 }
 
 .ShortLine {
@@ -79,7 +95,7 @@
 
 .down .CardTextHeader {
     position: absolute;
-    top: 24.2rem;
+    top: 15.75rem;
 }
 
 .downCircle .CircleBall {

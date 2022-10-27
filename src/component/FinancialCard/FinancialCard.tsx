@@ -21,7 +21,7 @@ const FinancialCard = ({
   DisplayHolder = "up",
   color = "blue",
 }: FinancialCardProps): JSX.Element => (
-  <div>
+  <div className={`${styles.FinancialCardWrapper} ${styles[color]}`}>
     <div className={`${styles.LineWrapper} ${styles[DisplayCircle]}`}>
       <div className={styles.CircleBall}></div>
     </div>
@@ -32,10 +32,10 @@ const FinancialCard = ({
       <div className={styles.ShortLine}></div>
     </div>
     <div className={`${styles.LineWrapper} ${styles[DisplayHolder]}`}>
-      <div className={`${styles.ArrowUp}`}></div>
+      <div className={`${styles.ArrowUp} `}></div>
       <div className={`${styles.ArrowDown}`}></div>
     </div>
-    <div className={`${styles.FinancialCard} ${styles[color]}`}>
+    <div className={`${styles.FinancialCard} `}>
       <img src={cardImage} alt="Family" />
       <p style={{ textAlign: "center" }}>{cardText}</p>
     </div>
