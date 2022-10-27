@@ -1,8 +1,8 @@
 import styles from "./FinancialCard.module.css";
 
-type DisplayCircleType = "block" | "none" | "downCircle";
+type DisplayCircleType = "CircleBlock" | "CircleNone" | "CircleDown";
 type DisplayHolder = "up" | "down";
-type Displaycolor = "blue" | "opaqueBlue";
+type Displaycolor = "Blue" | "OpaqueBlue";
 
 type FinancialCardProps = {
   cardImage: string;
@@ -17,9 +17,9 @@ const FinancialCard = ({
   text,
   cardImage,
   cardText,
-  DisplayCircle = "block",
+  DisplayCircle = "CircleBlock",
   DisplayHolder = "up",
-  color = "blue",
+  color = "Blue",
 }: FinancialCardProps): JSX.Element => (
   <div className={`${styles.FinancialCardWrapper} ${styles[color]}`}>
     <div className={`${styles.LineWrapper} ${styles[DisplayCircle]}`}>

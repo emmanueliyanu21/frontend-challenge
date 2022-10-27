@@ -13,11 +13,11 @@ const FinancialJourney = () => {
         <div className={styles.WrapperContainer}>
           <div className={styles.UpperCard}>
             <div className={styles.CardItemOne}>
-              <FinancialCard {...familyData} DisplayCircle='none' DisplayHolder = 'down' />
-              <FinancialCard {...holidayData} DisplayCircle='downCircle' DisplayHolder = 'down' />
+              <FinancialCard {...familyData} DisplayCircle='CircleNone' DisplayHolder = 'down' />
+              <FinancialCard {...holidayData} DisplayCircle='CircleDown' DisplayHolder = 'down' />
             </div>
             <div className={styles.CardItemThree}>
-              <FinancialCard {...retirementData} DisplayCircle='none' DisplayHolder = 'down'   />
+              <FinancialCard {...retirementData} DisplayCircle='CircleNone' DisplayHolder = 'down'   />
             </div>
           </div>
           <JourneyLine />
@@ -28,7 +28,7 @@ const FinancialJourney = () => {
               </div>
               <div className={styles.CardItemLowerTwo}>
                   <FinancialCard {...debtData} />
-                  <FinancialCard {...contributionData} color='opaqueBlue' DisplayCircle='none' />
+                  <FinancialCard {...contributionData} color='OpaqueBlue' DisplayCircle='CircleNone' />
               </div>
           </div>
         </div>

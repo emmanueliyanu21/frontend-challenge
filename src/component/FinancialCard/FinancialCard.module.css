@@ -8,21 +8,21 @@
   border-radius: 5px;
 }
 
-.opaqueBlue .FinancialCard {
+.OpaqueBlue .FinancialCard {
     background: #3C7F90;
 }
 
-.opaqueBlue .Wrapper {
+.OpaqueBlue .Wrapper {
     justify-content: end;
     padding-top: 8px;
 }
 
-.opaqueBlue .ArrowUp {
+.OpaqueBlue .ArrowUp {
     margin-right: -10px;
     border-bottom: 10px solid #3C7F90;
 }
 
-.opaqueBlue .LineWrapper {
+.OpaqueBlue .LineWrapper {
     justify-content: end;
     margin-right: 30px;
 }
@@ -84,7 +84,7 @@
   border-bottom: 10px solid #173f4b;
 }
 
-.none {
+.CircleNone {
   display: none;
 }
 
@@ -98,7 +98,7 @@
     top: 15.75rem;
 }
 
-.downCircle .CircleBall {
+.CircleDown .CircleBall {
   position: absolute;
   top: 15.4rem;
 }

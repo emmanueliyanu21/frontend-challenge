@@ -46,3 +46,16 @@
   position: absolute;
   right: 0;
 }
+
+.StartText {
+  position: absolute;
+  width: 50px;
+  margin-top: 21px;
+  text-align: center;
+  margin-left: -43px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #ffffff;
+  opacity: 0.6;
+}
