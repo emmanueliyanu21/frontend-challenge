@@ -5,8 +5,8 @@
 .financialCard {
   box-shadow: var(--primary-shadow);
   background: var(--teal);
-  height: 130px;
   width: 130px;
+  height: 120px;
   text-align: center;
   padding: 10px 0px;
   border-radius: 5px;
@@ -41,7 +41,7 @@ img {
   position: absolute;
   text-align: center;
   left: 42.3%;
-  top: -10px;
+  top: -7px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid var(--teal);
@@ -58,7 +58,7 @@ img {
   border-right: 10px solid transparent;
   border-top: 10px solid var(--teal);
   position: absolute;
-  top: 9.35rem;
+  top: 8.6rem;
 }
 
 .secondary .financialCard::before {
@@ -84,7 +84,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 40px;
 }
 
 .shortLine {
@@ -98,7 +98,7 @@ img {
 
 .top .shortLine {
   position: absolute;
-  top: 10.2rem;
+  top: 9.5rem;
   margin-top: 4px;
 }
 

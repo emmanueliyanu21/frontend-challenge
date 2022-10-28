@@ -9,8 +9,8 @@
   height: 2px;
   background: var(--white);
   color: var(--white);
-  min-width: 35.75rem;
-  max-width: 35.75rem;
+  min-width: 37.75rem;
+  max-width: 37.75rem;
   width: 100%;
   position: relative;
 }
@@ -76,7 +76,7 @@
 }
 
 .line .wrap:nth-child(5){
-  left: 35.78rem;
+  left: 36.75rem;
 }
 
 .line .wrap:nth-child(1) .progressPoint{

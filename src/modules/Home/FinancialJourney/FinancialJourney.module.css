@@ -19,6 +19,7 @@
   justify-content: space-between;
   margin-bottom: 45px;
   gap: 20rem;
+  padding-bottom: 5px;
 }
 
 .lowerCard {
@@ -31,7 +32,7 @@
 }
 
 .cardItemThree {
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 .cardItemOne {
@@ -47,7 +48,7 @@
 
 .cardItemLowerTwo {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: flex-end;
 }
 
