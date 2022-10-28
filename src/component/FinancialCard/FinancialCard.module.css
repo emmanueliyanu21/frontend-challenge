@@ -106,6 +106,10 @@ img {
   margin-right: -0.25rem;
 }
 
+.primary {
+  font-size: 14px;
+}
+
 .lineWrapper {
   display: flex;
   justify-content: center;

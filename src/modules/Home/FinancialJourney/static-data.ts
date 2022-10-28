@@ -1,10 +1,10 @@
-import family from "../../../family.svg";
-import holiday from "../../../going-holiday.svg";
-import retire from "../../../retire.svg";
-import home from "../../../home.svg";
-import emergency from "../../../em-fund.svg";
-import debt from "../../../debt.svg";
-import vision from "../../../vision.svg";
+import family from "../../../assets/images/family.svg";
+import holiday from "../../../assets/images/going-holiday.svg";
+import retire from "../../../assets/images/retire.svg";
+import home from "../../../assets/images/home.svg";
+import emergency from "../../../assets/images/em-fund.svg";
+import debt from "../../../assets/images/debt.svg";
+import vision from "../../../assets/images/vision.svg";
 
 const familyData = {
   cardImage: family,
