@@ -109,7 +109,7 @@
 }
 .line .wrap:nth-child(1) .progressStepText{
   width: 3rem;
-  margin-left: -3rem;
+  margin-left: -2.5rem;
 }
 
 .progressStepEnd .progressStepText{
