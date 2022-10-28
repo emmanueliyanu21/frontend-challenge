@@ -1,51 +1,57 @@
-.Wrapper {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  max-width: 120px;
+  height: var(--height);
+  max-width: 75rem;
   width: 100%;
   margin: auto;
 }
 
-.WrapperContainer {
+.wrapperContainer {
   max-width: 60vw;
   width: 100%;
   position: relative;
 }
 
-.UpperCard {
+.upperCard {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
+  gap: 20rem;
 }
 
-.LowerCard {
+.lowerCard {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+  margin-left: 0.4rem;
+  min-width: 49.8rem;
+  width: 100%;
 }
 
-.CardItemThree {
+.cardItemThree {
   margin-right: 5rem;
 }
 
-.CardItemOne {
-  gap: 20px;
+.cardItemOne {
+  gap: 1.25rem;
   display: flex;
 }
 
-.CardItemLowerOne {
+.cardItemLowerOne {
   display: flex;
   gap: 10rem;
 }
 
-.CardItemLowerTwo {
+.cardItemLowerTwo {
   display: flex;
   gap: 2rem;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 1200px) {
-  .Wrapper {
+  .wrapper {
     max-width: 800px;
   }
 }

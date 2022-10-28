@@ -1,119 +1,113 @@
-.FinancialCard {
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-  background: #173f4b;
-  height: auto;
+.bottom {
+  margin-top: 1rem;
+}
+
+.financialCard {
+  box-shadow: var(--primary-shadow);
+  background: var(--teal);
+  height: 130px;
   width: 130px;
   text-align: center;
   padding: 10px 0px;
   border-radius: 5px;
+  position: relative;
+  transition: var(--secondary-transition);
 }
 
-.OpaqueBlue .FinancialCard {
-  background: #3c7f90;
+.financialCard:hover {
+  box-shadow: 0px 3px 3px rgba(1, 5, 10, 0.12);
+  cursor: grab;
+  transition: var(--primary-transition);
 }
 
-.OpaqueBlue .Wrapper {
-  justify-content: end;
-  padding-top: 8px;
+img {
+  transition: ease-in .6s all 0.4ms;
 }
 
-.OpaqueBlue .ArrowUp {
-  margin-right: -10px;
-  border-bottom: 10px solid #3c7f90;
+.financialCard:hover img {
+  transform: translateY(2px);
+  transition: var(--primary-transition);
 }
 
-.OpaqueBlue .LineWrapper {
+.bottom .financialCard {
+  margin-top: 8px;
+}
+
+.bottom .financialCard::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  left: 42.3%;
+  top: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--teal);
+}
+
+.top .financialCard::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 42.3%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--teal);
+  position: absolute;
+  top: 9.35rem;
+}
+
+.secondary .financialCard::before {
+  left: 72%;
+  border-bottom: 10px solid var(--electric-blue);
+}
+
+.secondary .financialCard {
+  background: var(--electric-blue);
+  height: auto;
+}
+
+.secondary .lineWrapper {
   justify-content: end;
   margin-right: 30px;
 }
 
-.FinancialCard p {
+.financialCard p {
   max-width: 100px;
   width: 100%;
   text-align: center;
   margin: auto;
-  padding: 10px 0px;
-}
-
-.CardTextHeader {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-  color: #ffffff;
-  opacity: 0.6;
-  max-width: 100px;
-  text-align: center;
-}
-
-.Wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 60px;
-  position: relative;
+  justify-content: center;
+  min-height: 50px;
 }
 
-.ShortLine {
+.shortLine {
   text-align: center;
   width: 0px;
   height: 15px;
-  border: 1px solid #3c7f90;
+  border: 1px solid var(--electric-blue);
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
-.LineWrapper {
+.top .shortLine {
+  position: absolute;
+  top: 10.2rem;
+  margin-top: 4px;
+}
+
+.secondary .shortLine {
+  margin-right: -0.25rem;
+}
+
+.lineWrapper {
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-.CircleBall {
-  width: 10px;
-  height: 10px;
-  background-color: #00b897;
-  border-radius: 100%;
-  border: 4px solid rgba(33, 90, 107, 1);
-  margin-top: -10px;
-}
-
-.ArrowUp {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #173f4b;
-}
-
-.CircleNone {
-  display: none;
-}
-
-.down .ShortLine {
-  position: absolute;
-  top: 9.5rem;
-  margin-top: 3px;
-}
-
-.down .CardTextHeader {
-  position: absolute;
-  top: 15.75rem;
-}
-
-.CircleDown .CircleBall {
-  position: absolute;
-  top: 15.4rem;
-}
-
-.down .ArrowDown {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #173f4b;
-  position: absolute;
-  top: 8.65rem;
-}
-
-.down .ArrowUp {
-  display: none;
 }

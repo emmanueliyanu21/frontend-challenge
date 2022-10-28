@@ -1,43 +1,28 @@
 import styles from "./FinancialCard.module.css";
 
-type DisplayCircleType = "CircleBlock" | "CircleNone" | "CircleDown";
-type DisplayHolder = "up" | "down";
-type Displaycolor = "Blue" | "OpaqueBlue";
+type positionProp = "top" | "bottom";
+type typeProp = "primary" | "secondary";
 
 type FinancialCardProps = {
   cardImage: string;
   cardText: string;
-  text?: string;
-  DisplayCircle?: DisplayCircleType;
-  DisplayHolder?: DisplayHolder;
-  color?: Displaycolor;
+  position?: positionProp;
+  type?: typeProp;
 };
 
 const FinancialCard = ({
-  text,
   cardImage,
   cardText,
-  DisplayCircle = "CircleBlock",
-  DisplayHolder = "up",
-  color = "Blue",
+  position = "bottom",
+  type = "primary",
 }: FinancialCardProps): JSX.Element => (
-  <div className={`${styles.FinancialCardWrapper} ${styles[color]}`}>
-    <div className={`${styles.LineWrapper} ${styles[DisplayCircle]}`}>
-      <div className={styles.CircleBall}></div>
+  <div className={`${styles[position]} ${styles[type]}`}>
+    <div className={styles.lineWrapper}>
+      <div className={styles.shortLine}></div>
     </div>
-    <div className={`${styles.Wrapper} ${styles[DisplayHolder]}`}>
-      <p className={styles.CardTextHeader}>{text}</p>
-    </div>
-    <div className={`${styles.LineWrapper} ${styles[DisplayHolder]}`}>
-      <div className={styles.ShortLine}></div>
-    </div>
-    <div className={`${styles.LineWrapper} ${styles[DisplayHolder]}`}>
-      <div className={`${styles.ArrowUp} `}></div>
-      <div className={`${styles.ArrowDown}`}></div>
-    </div>
-    <div className={`${styles.FinancialCard} `}>
-      <img src={cardImage} alt="Family" />
-      <p style={{ textAlign: "center" }}>{cardText}</p>
+    <div className={styles.financialCard}>
+      <img src={cardImage} alt={cardText} />
+      <p>{cardText}</p>
     </div>
   </div>
 );

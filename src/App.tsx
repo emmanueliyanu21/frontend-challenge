@@ -1,10 +1,11 @@
-import { FinancialJourney } from "./modules/FinancialJourney";
+import Home from "./modules/Home";
+import "./App.css"
 
 function App() {
   return (
-    <main>
-      <FinancialJourney />
-    </main>
+    <div>
+      <Home />
+    </div>
   );
 }
 
