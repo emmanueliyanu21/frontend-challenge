@@ -35,8 +35,9 @@
 }
 
 .cardItemOne {
-  gap: 1.25rem;
+  gap: 1.05rem;
   display: flex;
+  margin-left: 0.2rem;
 }
 
 .cardItemLowerOne {
